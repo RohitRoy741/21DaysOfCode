@@ -1,6 +1,10 @@
+*{
+	box-sizing: border-box;
+}
 body{
 	background-color: #efefef;
 	color: #555;
+	margin: 0;
 }
 ul{
 	list-style-type: none;
@@ -26,11 +30,9 @@ li a:hover{
 	background-color: #F00;
 	color: #fff;
 }
-.space{
-	margin: 2px;
-}
 .logo{
-	margin-top: 200px;
+	position: relative;
+	top: 200px;
 	text-align: center;
 	font-size: 48px;
 	font-variant: small-caps;
@@ -44,6 +46,8 @@ li a:hover{
 	border-radius: 10px;
 }
 .tag{
+	position: relative;
+	top: 200px;
 	text-align: center;
 	font-size: 36px;
 	margin-bottom: 100px;
@@ -60,7 +64,9 @@ header{
 	background-image: url("header_background.jpg");
 	overflow: hidden;
 	text-align: center;
-	
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 570px;
 }
 .container{
 	width: 960px;
@@ -79,10 +85,11 @@ h5{
 	font-family: "Calibri Light",Helvetica, sans-serif;
 	font-size: 24px;
 }
-.box{
+.box-l{
 	float: left;
 	width: 30%;
 	margin: 1.5%;
+	padding: 0 5px;
 }
 
 .form-dis{
@@ -159,4 +166,18 @@ footer small{
 	display: inline-block;
 	float: right;
 	font-style: italic;
+}
+@media (min-width: 992px) and (max-width: 1199px ){
+	.box-m{
+		float: left;
+		width: 45%;
+		padding: 10px;
+		margin: 1.5%;
+	}
+}
+@media (max-width: 991px){
+	.box-s{
+		width: 90%;
+		margin: 0 auto;
+	}
 }
